@@ -1,10 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
+import "./styles.css";
 
 export default function ShopPage() {
-  return (
-    <Container>
-      <h1>Shop</h1>
-    </Container>
-  );
+  return <h1>Shop</h1>;
 }
