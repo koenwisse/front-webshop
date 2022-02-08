@@ -9,24 +9,19 @@
 }
 
 .link-container {
-  background-color: green;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  /* margin-left: auto;
+  margin-right: auto; */
   max-width: 10;
 
   display: flex;
   order: 1;
-  flex-grow: 4;
-  justify-content: space-between;
+  flex-grow: 1;
+  justify-content: space-evenly;
 }
 
 .input-container {
-  background-color: red;
-  margin-top: 5px;
-  margin-bottom: 5px;
   order: 2;
   flex-grow: 1;
-  justify-content: flex-end;
 }
