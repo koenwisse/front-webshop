@@ -1,8 +1,12 @@
 import React from "react";
 import "./styles.css";
 import NavBarItem from "./NavBarItem";
-// import Nav from "react-bootstrap/Nav";
-// import Navbar from "react-bootstrap/Navbar";
+import { FaBeer } from "react-icons/fa";
+import { CgProfile } from "react-icons/cg";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineHeart } from "react-icons/ai";
+
+// import { CgProfile } from "@react-icons/all-files/fa/CgProfile";
 
 export default function NavBar() {
   return (
@@ -26,6 +30,11 @@ export default function NavBar() {
         <NavBarItem path="/blog" linkText="BLOG"></NavBarItem>
         <NavBarItem path="/shop" linkText="SHOP"></NavBarItem>
         <NavBarItem path="/contact" linkText="CONTACT"></NavBarItem>
+      </div>
+      <div className="icons-container">
+        <CgProfile />
+        <AiOutlineShoppingCart />
+        <AiOutlineHeart />
       </div>
     </div>
   );

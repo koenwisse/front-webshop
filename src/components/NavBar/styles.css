@@ -17,7 +17,7 @@
 
   display: flex;
   order: 1;
-  flex-grow: 1;
+  flex-grow: 6;
   justify-content: space-evenly;
   font-family: "Roboto", sans-serif;
 }
@@ -25,4 +25,18 @@
 .input-container {
   order: 2;
   flex-grow: 1;
+}
+
+.icons-container {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  max-width: 10;
+  display: flex;
+  order: 3;
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
+
+.icon {
+  width: "5rem";
 }
