@@ -4,7 +4,7 @@ import NavBarItem from "./NavBarItem";
 import { CgProfile } from "react-icons/cg";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
-import { NavLink, NavItem } from "react-bootstrap";
+import { NavItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 // import { CgProfile } from "@react-icons/all-files/fa/CgProfile";
