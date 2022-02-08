@@ -1,10 +1,11 @@
 import React from "react";
 import "./styles.css";
 import NavBarItem from "./NavBarItem";
-import { FaBeer } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
+import { NavLink, NavItem } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 // import { CgProfile } from "@react-icons/all-files/fa/CgProfile";
 
@@ -32,9 +33,21 @@ export default function NavBar() {
         <NavBarItem path="/contact" linkText="CONTACT"></NavBarItem>
       </div>
       <div className="icons-container">
-        <CgProfile />
-        <AiOutlineShoppingCart />
-        <AiOutlineHeart />
+        <NavItem>
+          <Link to="/profile">
+            <CgProfile />
+          </Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/cart">
+            <AiOutlineShoppingCart />
+          </Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/favourites">
+            <AiOutlineHeart />
+          </Link>
+        </NavItem>
       </div>
     </div>
   );
