@@ -19,6 +19,7 @@
   order: 1;
   flex-grow: 1;
   justify-content: space-evenly;
+  font-family: "Roboto", sans-serif;
 }
 
 .input-container {
