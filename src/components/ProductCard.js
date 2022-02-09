@@ -18,7 +18,7 @@ export default function ProductCard(props) {
                 //   variant="top"
                 src={props.image}
                 alt="product-img"
-                style={{ width: 250, height: 250 }}
+                style={{ width: 200 }}
               />
             </Link>
           </Col>

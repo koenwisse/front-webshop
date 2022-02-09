@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import Container from "react-bootstrap/Container";
+import React from "react";
+// import Container from "react-bootstrap/Container";
 import "./styles.css";
 
 export default function HomePage() {
