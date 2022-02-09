@@ -1,10 +1,12 @@
+//PACKAGES
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { Container, Col, Row, Button } from "react-bootstrap";
-
+//REDUX
 import { selectProducts } from "../../store/product/selectors";
 import { fetchProducts } from "../../store/product/actions";
-import ProductCard from "../../components/ProductCard";
+//COMP
+import ProductCard from "../../components/ProductCard/ProductCard";
+//STYLE
 import "./styles.css";
 
 export default function ShopPage() {
@@ -15,17 +17,22 @@ export default function ShopPage() {
     dispatch(fetchProducts());
   }, [dispatch]);
 
-  return products.map((product) => {
-    return (
-      <ProductCard
-        key={product.id}
-        id={product.id}
-        title={product.title}
-        price={product.price}
-        description={product.description}
-        rating={product.rating}
-        image={product.mainImage}
-      />
-    );
-  });
+  return (
+    <div className="container">
+      {products.map((product) => {
+        return (
+          <ProductCard
+            key={product.id}
+            id={product.id}
+            title={product.title}
+            price={product.price}
+            description={product.description}
+            rating={product.rating}
+            image={product.mainImage}
+          />
+        );
+      })}
+      ;
+    </div>
+  );
 }

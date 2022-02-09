@@ -7,11 +7,11 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { NavItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-// import { CgProfile } from "@react-icons/all-files/fa/CgProfile";
-
 export default function NavBar() {
   return (
+    // CONTAINER
     <div className="container">
+      {/* INPUT */}
       <div className="input-container">
         <input
           type="text"
@@ -25,6 +25,7 @@ export default function NavBar() {
           }}
         />
       </div>
+      {/* LINKS */}
       <div className="link-container">
         <NavBarItem path="/" linkText="HOME"></NavBarItem>
         <NavBarItem path="/products" linkText="PRODUCTS"></NavBarItem>
@@ -32,6 +33,7 @@ export default function NavBar() {
         <NavBarItem path="/shop" linkText="SHOP"></NavBarItem>
         <NavBarItem path="/contact" linkText="CONTACT"></NavBarItem>
       </div>
+      {/* ICONS */}
       <div className="icons-container">
         <NavItem>
           <Link to="/profile">
