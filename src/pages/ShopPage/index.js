@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Container, Col, Row, Button } from "react-bootstrap";
+// import { Container, Col, Row, Button } from "react-bootstrap";
 
 import { selectProducts } from "../../store/product/selectors";
 import { fetchProducts } from "../../store/product/actions";

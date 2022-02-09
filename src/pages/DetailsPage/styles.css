@@ -1,0 +1,10 @@
+.detailsPageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

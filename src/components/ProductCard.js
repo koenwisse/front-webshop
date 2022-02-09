@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import { Col, Row, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default function ProductCard(props) {
@@ -18,7 +18,7 @@ export default function ProductCard(props) {
                 //   variant="top"
                 src={props.image}
                 alt="product-img"
-                style={{ width: 250, height: 250 }}
+                style={{ width: 200 }}
               />
             </Link>
           </Col>
