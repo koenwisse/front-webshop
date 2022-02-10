@@ -27,9 +27,9 @@ export default function NavBar() {
       </div>
       <div className="link-container">
         <NavBarItem path="/" linkText="HOME"></NavBarItem>
-        <NavBarItem path="/products" linkText="PRODUCTS"></NavBarItem>
+        {/* <NavBarItem path="/products" linkText="PRODUCTS"></NavBarItem> */}
         <NavBarItem path="/blog" linkText="BLOG"></NavBarItem>
-        <NavBarItem path="/shop" linkText="SHOP"></NavBarItem>
+        <NavBarItem path="/product" linkText="SHOP"></NavBarItem>
         <NavBarItem path="/contact" linkText="CONTACT"></NavBarItem>
       </div>
       <div className="icons-container">

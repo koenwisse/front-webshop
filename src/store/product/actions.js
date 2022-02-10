@@ -20,7 +20,7 @@ export const fetchProductDetailsSuccess = (details) => {
 export const fetchProducts = () => {
   return async (dispatch, getState) => {
     try {
-      const response = await axios.get(`http://localhost:4000/shop`);
+      const response = await axios.get(`http://localhost:4000/product`);
       console.log(response.data);
       dispatch(fetchProductsSuccess(response.data));
     } catch (e) {
@@ -32,7 +32,7 @@ export const fetchProducts = () => {
 export const fetchProductDetails = (id) => {
   return async (dispatch, getState) => {
     try {
-      const response = await axios.get(`http://localhost:4000/shop/${id}`);
+      const response = await axios.get(`http://localhost:4000/product/${id}`);
       dispatch(fetchProductDetailsSuccess(response.data));
     } catch (e) {
       console.log(e.message);

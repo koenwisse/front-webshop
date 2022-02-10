@@ -13,7 +13,7 @@ export default function ProductCard(props) {
       >
         <Row>
           <Col md={{ span: 3, offset: 0 }}>
-            <Link to={`/shop/${props.id}`}>
+            <Link to={`/product/${props.id}`}>
               <Card.Img
                 //   variant="top"
                 src={props.image}
