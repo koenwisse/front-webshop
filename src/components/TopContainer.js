@@ -2,7 +2,7 @@ const container = {
   display: "flex",
   flexDirection: "row",
   backgroundColor: "#8568ff",
-  height: "400px",
+  height: "250px",
   color: "white",
   boxShadow: "0px 0px 8px black",
   justifyContent: "space-evenly",
@@ -19,7 +19,7 @@ export default function TopContainer() {
       <img
         src="https://i.imgur.com/2j8aR3I.jpeg"
         alt="main-img"
-        style={{ width: 250, borderRadius: "5%" }}
+        style={{ width: 150, borderRadius: "5%" }}
       />
     </div>
   );

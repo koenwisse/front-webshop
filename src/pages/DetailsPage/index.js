@@ -5,6 +5,7 @@ import { fetchProductDetails } from "../../store/product/actions";
 import { selectProductDetails } from "../../store/product/selectors";
 import Button from "react-bootstrap/Button";
 import TopContainer from "../../components/TopContainer";
+import FooterContainer from "../../components/FooterContainer";
 import { AiOutlineHeart, AiOutlineShoppingCart } from "react-icons/ai";
 import {
   TiSocialFacebookCircular,
@@ -30,6 +31,9 @@ export default function DetailsPage() {
     backgroundColor: "white",
     color: "#1d3178",
     marginLeft: "35px",
+  };
+  const header = {
+    marginRight: "75px",
   };
 
   return (
@@ -70,6 +74,34 @@ export default function DetailsPage() {
           </p>
         </div>
       </div>
+      <div className="infoContainer">
+        <div className="description">
+          <h5 style={header}>Description</h5>
+          <h5 style={header}>Additional info</h5>
+          <h5 style={header}>Reviews</h5>
+        </div>
+        <div>
+          <h6>Lorem Ipsum</h6>
+          <p>
+            For instance, =lorem(2,5) will create 2 paragraphs of Lorem Ipsum
+            text and it will span across 5 lines (or sentences). The parameters
+            are optional. If you omit the parameters the default number of
+            paragraphs is three, and the default number of lines per paragraph
+            is also three.
+          </p>
+        </div>
+        <div>
+          <h6>More info</h6>
+          <p>
+            For instance, =lorem(2,5) will create 2 paragraphs of Lorem Ipsum
+            text and it will span across 5 lines (or sentences). The parameters
+            are optional. If you omit the parameters the default number of
+            paragraphs is three, and the default number of lines per paragraph
+            is also three.
+          </p>
+        </div>
+      </div>
+      <FooterContainer />
     </div>
   );
 }
